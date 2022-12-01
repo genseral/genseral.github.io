@@ -1,1 +1,0 @@
-# genseral.github.io
