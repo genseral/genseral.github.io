@@ -44,7 +44,7 @@
 						<div class="inner">
 							<div class="logo"><span class="icon fa-home"></span></div>
 							<h2>Alexander Genser</h2>
-							<p>Data and Machine learning engineer.</p>
+							<p>Data science and Machine learning enthusiast.</p>
 						</div>
 						<div class="inner">
 							<ul style="padding-left: 0px"> 
@@ -64,21 +64,22 @@
 					<section id="wrapper">
 
 						<!-- One -->
-							<section id="one" class="wrapper  spotlight style4">
+							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/me.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">About me</h2>
 										<p>I am a data scientist passionate about machine learning with real-world applications. 
-											My academic background including a recently defended PhD from ETH and years of experience in data science and machine/deep learning 
-											underline my passion to tackle pressing challenges for a more sustainable future.</p>
+											My academic background with (almost) holding a PhD degree from ETH and years of experience in data science and machine/deep learning 
+											underline my passion to tackle pressing challenges at the interface of 
+											computer science and customer needs.</p>
 										<a href="cv.html" class="special">See my full CV</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style3">
+							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/graph_project.png" alt="" /></a>
 									<div class="content">
@@ -93,12 +94,12 @@
 							</section>
 
 						<!-- Three -->
-							<section id="three" class="wrapper spotlight style2">
+							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/bike.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Cycling</h2>
-										<p>In my free time, I like to the road with my road or gravel bike and explore the surroundings of - currently - Zurich, Switzerland.
+										<p>In my free time, I like to hit my road or gravel bike and explore the surroundings of - currently - Zurich, Switzerland.
 											If time allows, I am also into long-distance cycling, such as e.g., the Swiss Ultra Cycling Challenge (SUCH).
 											Some impressions and routes are collected here that might serve you well if you live in the area.
 										</p>
@@ -113,32 +114,32 @@
 									<h2 class="major">Selected projects</h2>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/project_1_logo.png" alt="" /></a>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3 class="major">Signal phase timing predictions with machine learning</h3>
 											<p>Prediction of the next red signal phase's duration with traffic signal and loop detector data.</p>
-											<a href="project_t2g.html" class="special">Learn more</a>
+											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/project_2_logo.png" alt="" /></a>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
 											<h3 class="major">Dynamic congestion pricing framework based on traffic equilibria</h3>
 											<p>A dynamic pricing method for an urban large-scale network based on traffic equilibria and deep learning.</p>
-											<a href="project_pricing.html" class="special">Learn more</a>
+											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/project_3_logo.png" alt="" /></a>
+											<a href="#" class="image"><img src="images/Traffic_ass_project2.png" alt="" /></a>
 											<h3 class="major">Traffic flow and travel time assessment/estimation</h3>
 											<p>Assessment and utilization of several empirical traffic sensor data sets for deriving traffic states.</p>
-											<a href="project_traffic_state_ass.html" class="special">Learn more</a>
+											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/project_4_logo.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
 											<h3 class="major">Traffic state estimation with a physics-informed deep learning model</h3>
 											<p>Using traditional traffic models and deep learning to enhance traffic state estimation on freeways.</p>
-											<a href="project_traffic_state_DNN.html" class="special">Learn more</a>
+											<a href="#" class="special">Learn more</a>
 										</article>
 									</section>
 									<ul class="actions">
-										<li><a href="projects.html" class="button">Browse All</a></li>
+										<li><a href="#" class="button">Browse All</a></li>
 									</ul>
 								</div>
 							</section>
@@ -177,5 +178,43 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
+	<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>
