@@ -8,7 +8,7 @@ window.onload = function () {
     var path = window.location.pathname
     var page_name = path.split('/').pop();
     
-    if (page_name == 'index.html') {
+    if (page_name == 'index.html' or page_name == '') {
         document.getElementById('banner').style.backgroundImage =  "linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("+image+")";
         document.getElementById('banner').style.backgroundRepeat = "no-repeat";
         document.getElementById('banner').style.backgroundSize = "cover";   
