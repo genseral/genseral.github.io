@@ -7,7 +7,7 @@ window.onload = function () {
     var image = img_names[Math.floor(Math.random()*img_names.length)];
     var path = window.location.pathname
     var page_name = path.split('/').pop();
-
+    
     if (page_name == 'index.html') {
         document.getElementById('banner').style.backgroundImage =  "linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("+image+")";
         document.getElementById('banner').style.backgroundRepeat = "no-repeat";
