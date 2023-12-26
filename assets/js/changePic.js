@@ -8,8 +8,6 @@ window.onload = function () {
     var path = window.location.pathname
     var page_name = path.split('/').pop();
 
-  
-    console.log("on_index is true")
     document.getElementById('banner').style.backgroundImage =  "linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("+image+")";
     document.getElementById('banner').style.backgroundRepeat = "no-repeat";
     document.getElementById('banner').style.backgroundSize = "cover";   
