@@ -8,8 +8,15 @@ window.onload = function () {
     var path = window.location.pathname
     var page_name = path.split('/').pop();
 
-    document.getElementById('banner').style.backgroundImage =  "linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("+image+")";
-    document.getElementById('banner').style.backgroundRepeat = "no-repeat";
-    document.getElementById('banner').style.backgroundSize = "cover";   
-
+    if (typeof on_index == "undefined") {
+        document.getElementsByTagName('header')[1].style.backgroundImage =  "linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("+image+")";
+        document.getElementsByTagName('header')[1].style.backgroundRepeat = "no-repeat";
+        document.getElementsByTagName('header')[1].style.backgroundSize = "cover";   
+ 
+    } 
+    else if (on_index == true) {
+        document.getElementById('banner').style.backgroundImage =  "linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("+image+")";
+        document.getElementById('banner').style.backgroundRepeat = "no-repeat";
+        document.getElementById('banner').style.backgroundSize = "cover";   
+    }
 }
